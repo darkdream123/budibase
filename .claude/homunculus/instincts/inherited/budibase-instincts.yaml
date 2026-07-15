@@ -1,0 +1,297 @@
+# Instincts generated from https://github.com/darkdream123/budibase
+# Generated: 2026-07-15T17:31:39.992Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: budibase-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/darkdream123/budibase
+---
+
+# Budibase Commit Length
+
+## Action
+
+Write moderate-length commit messages (~62 characters)
+
+## Evidence
+
+- Average commit message length: 62 chars
+- Based on 1 commits
+
+---
+id: budibase-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/darkdream123/budibase
+---
+
+# Budibase Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: budibase-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/darkdream123/budibase
+---
+
+# Budibase Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: budibase-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/darkdream123/budibase
+---
+
+# Budibase Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: budibase-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/darkdream123/budibase
+---
+
+# Budibase Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: budibase-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: budibase-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: budibase-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: budibase-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: budibase-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: budibase-instinct-export-style
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: budibase-instinct-monorepo-structure
+trigger: "When adding a new package or module"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Monorepo Structure
+
+## Action
+
+Place it inside the 'packages' directory
+
+## Evidence
+
+- Pattern in folderStructure.commonFolders
+
+---
+id: budibase-instinct-test-location
+trigger: "When creating new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in folderStructure.testLocation
+
+---
+id: budibase-instinct-typescript
+trigger: "When writing new code"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Typescript
+
+## Action
+
+Use TypeScript as the implementation language
+
+## Evidence
+
+- Pattern in codeStyle.language
+
+---
+id: budibase-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: darkdream123/budibase
+---
+
+# Budibase Instinct Commit Format
+
+## Action
+
+Write a freeform message without a specific prefix, typically describing the action and affected scope
+
+## Evidence
+
+- Seen in commit: 'Bump the npm_and_yarn group across 1 directory with 22 updates'
+- Pattern in commits.prefixes
+
